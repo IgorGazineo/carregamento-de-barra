@@ -1,0 +1,56 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  margin: 130px 0;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: darkslategray;
+}
+
+.back-bar {
+  width: 300px;
+  height: 40px;
+  background-color: rgb(210, 210, 210);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.inner-bar {
+  position: absolute;
+  background-color: rgb(255, 79, 79);
+  height: 40px;
+  width: 0%;
+  transition: width 0.7s ease;
+  cursor: pointer;
+}
+
+.inner-bar:hover {
+  width: 100%;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: darkslategray;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: brown;
+}
